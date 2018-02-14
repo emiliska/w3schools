@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<!-- #7 JavaScript in <head> -->
+		<script>
+			function myFunction(){
+				document.getElementById('demo4').innerHTML = 
+				"I have changed.";
+			}
+			function customAlert(){
+				window.alert('oh jeez!');
+			}
+		</script>
+	</head>
+	
+	<body>
+		<h1>Let's see what <a href="https://www.w3schools.com/js/js_intro.asp">JavaScript</a> can do for us...</h1>
+		<h2>A beautiful site.</h2>
+		
+		<p id="demo">JavaScript can change HTML content.</p>
+		
+		<!-- #1 creates button that replaces element with id of 'demo'-->
+		<button type="button"
+		onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+		
+		<br><br><hr><br>
+		
+		<!-- #2 change an image with the click of a button -->
+		<p> Here, JavaScript changes the src attribute of an img.</p>
+		
+		<button onclick="document.getElementById('myImage').src='images/pic_bulbon.gif'">
+		Turn on the light</button>
+		
+		<img id="myImage" src="images/pic_bulboff.gif" style="width:100px">
+		
+		<button onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'">
+		Turn off the light</button>
+		
+		<br><br><hr><br>
+		
+		<p id="demo2">I am but a humble demonstration of the power of JavaScript.</p>
+		
+		<!-- #3 JavaScript can change HTML styles (CSS) -->
+		<br>
+		<button onclick="document.getElementById('demo2').style.fontSize='24px';">Change HTML Style</button>
+		
+		<!-- #4 JavaScript can hide HTML elements -->
+		<button onclick="document.getElementById('demo2').style.display='none';">Hide HTML Element</button>
+		
+		<!-- #5 JavaScript can show HTML elements -->
+		<button onclick="document.getElementById('demo2').style.display='block';">Show HTML Element</button>
+		
+		<br><br><hr><br>	
+
+		<!-- #6 The <script> tag -->
+		<p id='demo3'> I'll be overwritten soon.</p>
+		<script>
+			document.getElementById('demo3').innerHTML = 
+			"These characters brought to you by an embedded JS script.";
+		</script>
+		
+		<br><br><hr><br>
+		
+		<!-- #7 JavaScript in <head> -->
+		<p id='demo4'> If you click the button, I will change.</p>
+		<button type="button" onclick="myFunction()">Using JS in Header</button>
+		
+		<!-- #8 JavaScript in <body> -->
+		<script>
+			function sonOfMyFunction() {
+				document.getElementById('demo4').innerHTML = 
+				"Hurray, for again, I have changed!";
+			}
+		</script>
+		<button type="button" onclick="sonOfMyFunction()">Using JS in Body</button>
+		
+		<br><br><hr><br>
+		
+		<!-- #9 External JavaScript -->
+		<p id='demo5'>I was characters once.</p>
+		<button type="button" onclick="myFunction3()">External JS</button>
+		<button type="button" onclick="rewriteOriginalMessage()">(External JS) Undo</button>
+		<script src="external.js"></script>
+		
+		<br><br><hr><br>
+		
+		<!-- #10 innerHTML -->
+		<p id='demo6'>Eleven will be here soon.</p>
+		<script>
+		document.getElementById('demo6').innerHTML = 5 + 6;
+		</script>
+		
+		<br><br><hr><br>
+		
+		<!-- using document.write()-->
+		<script>
+		document.write(6 + 7);
+		</script>
+
+		<br><br><hr><br>
+		
+		<!-- using document.write() after html fully loaded will del all existing HTML-->
+		<button type="button" onclick="document.write(5+6)">Destroy</button>	
+
+		<br><br><hr><br>		
+		<!-- using window.alert() -->
+		<button type="button" onclick="customAlert()">Launch Alert</button>	
+
+		<br><br><hr><br>	
+		
+		<!-- using console.log -->
+		<p>Check out these changes by viewing console log however you normally check out your webpage's source code within the browser. <3</p>
+		<script>
+		console.log(11+10);
+		</script>
+		
+		<br><hr><br>			
+		
+		<!-- variables are a thing in JS too-->
+		Who invented golang?
+		<p id='demo7'>This guy is cool.</p>
+		<script>
+			var developerName = "Ken Thompson", 
+				devLang = "golang";
+			document.getElementById('demo7').innerHTML = 
+			developerName + ": " + devLang;
+		</script>
+		
+		<br><hr><br>			
+		
+		
+		
+		</body>
+</html>
