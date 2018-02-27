@@ -4,13 +4,30 @@
 		<title>Form Practice with JS</title>
 	<head>
 	<body>
-		<!-- Automatic form validation -->
-		<form action="/action_page.php" method="post">
+<!-- Automatic form validation -->
+	
+<!--
+			<form action="/action_page.php" method="post">
 			<input type="text" name="firstName" required>
 			<input type="submit" value="Submit">
 		</form>
 		<p> If you click submit without filling out the text field,
 			your browser will display a gentle error message.</p>
+-->		
+		<h4>Please, enter your information:</h4>
+		<form action="">
+		<pre>
+	FIRST NAME: <input type="text" name="firstName" size="15" maxlength="15"
+			autocomplete autofocus required/>
+
+	LAST NAME : <input type="text"  name="lastName" size="15" maxlength="15"
+			autocomplete required/>
+
+	EMAIL	  : <input type="email" name="email" size="25" maxlength="80" autocomplete/>
+	
+				  <input type="submit" value="Submit"/>
+		</pre>
+		</form>
 	</body>
 </html>
 
