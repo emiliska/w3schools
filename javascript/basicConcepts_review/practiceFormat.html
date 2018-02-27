@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- #7 JavaScript in <head> -->
+		<script>
+			function myFunction(){
+				document.getElementById('demo7').innerHTML =
+				"I have changed.";}
+			function customAlert(){
+				window.alert('oh jeez!');
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Let's see what 
+		<a href="https://www.w3schools.com/js/js_intro.asp">Javascript</a> 
+		can do for us!</h1>
+		<h2> A beautiful site.</h2>
+		
+		<p id="demo">Javascript can change HTML content.</p>
+		
+		<!-- #1 creates button replace text -->
+		<button type="button"
+		onclick='document.getElementById("demo").innerHTML = "Hello Javascript!"'>
+		Click me!</button>
+		<br><br><hr><br><br>
+		
+		<!-- #2 change an image with button -->
+		<p> Here, JavaScript changes the src attribute of an img.</p>
+		<button 
+		onclick='document.getElementById("myImage").src="../images/pic_bulbon.gif"'>
+		Turn on the light</button>
+		<img id="myImage" src="../images/pic_bulboff.gif" style="width:100px">
+		<button 
+		onclick='document.getElementById("myImage").src="../images/pic_bulboff.gif"'>
+		Turn off the light</button>
+		<br><br><hr><br><br>
+
+		<!-- #3 JavaScript can change HTML styles (CSS) -->
+		<p id="demo3">I am but a humble demonstration of the power of Javascript.</p>
+		<button onclick="document.getElementById('demo3').style.fontSize='24px';">
+		Change HTML Style</button>
+		<!-- #4 JavaScript can hide HTML elements -->
+		<button onclick="document.getElementById('demo3').style.display='none';">
+		Hide HTML Element</button>
+		<!-- #5 JavaScript can show HTML elements -->
+		<button onclick="document.getElementById('demo3').style.display='block';">
+		Show HTML Element</button>
+		<br><br><hr><br><br>
+		
+		<!-- #6 The <script> tag -->
+		<p id='demo6'>I'll be overwritten soon.</p>
+		<script>
+			document.getElementById('demo6').innerHTML =
+			"These characters brougt to you by an embedded JS script.";
+		</script>
+		<br><br><hr><br>
+
+		<!-- #7 JS in <head> -->
+		<p id='demo7'> If you click the buttons, I will change.</p>
+		<button type="button" onclick="myFunction()">Using JS in Header</button>
+
+		<!-- #8 JavaScript in <body> -->
+		<script>
+			function sonOfMyFunction() {
+				document.getElementById('demo7').innerHTML =
+				"Hurray, for again, I have changed!";}
+		</script>
+		<button onclick="sonOfMyFunction()">Using JS in body</button>
+		<br><br><hr><br>
+		
+		<!-- #9 External JS -->
+		<p id='demo5'>I was characters once.</p>
+		<button onclick="myFunction3()">External JS script</button>
+		<button onclick="rewriteOriginalMessage()">External JS Undo</button>
+		<script src="external.js"></script>
+		<br><br><hr><br>
+		
+		<!-- #10 innerHTML -->
+		<p id='demo10'>Eleven will be here soon.</p>
+		<script> 
+			document.getElementById('demo10').innerHTML = 5 + 6;
+		</script>
+		<br><hr><br>
+
+		<!-- using document.write)-->
+		<script>
+		document.write(6 + 7);
+		</script>
+		<br><hr><br>
+
+		<!-- using document.write() after HTML fully loaded 
+			will dell all exiting HTML-->
+		<button onclick="document.write('BOOM!!!!!')">Destroy</button>
+		<br><hr><br>
+
+		<!-- using window.alert() -->
+		<button onclick="customAlert()">Launch Alert</button>
+		<br><hr><br>
+
+		<!-- using console.log -->
+		<p>Check out the changes that have occured behind the scenes here
+			 by viewing console log, or however you normally check 
+			out your webpages' source code within the browser.</p>
+		<script>
+			console.log(11+10);
+		</script>
+		<br><hr><br>
+
+		<!-- variables are a thing in JS too-->
+		<u>COOL GUY HALL OF FAME</u>:
+		<p id='coolGuy'>This guy.</p>
+		<script>
+			var devName = "Ken Thompson",
+			    devLang = "golang";
+			document.getElementById('coolGuy').innerHTML =
+			devName + ": " + devLang;
+		</script>
+
+		<hr>
+
+		<p>Here is some more var practice:</p>
+		<p id='prices'></p>
+		<script>
+			var price1 = 50;
+			var price2 = 60;
+			var total = price1 + price2;
+			document.getElementById('prices').innerHTML = 
+				"Total: $" + total;
+		</script>
+
+		<hr>
+
+	</body>
+</html>

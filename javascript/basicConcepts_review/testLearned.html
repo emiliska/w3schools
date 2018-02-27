@@ -15,7 +15,7 @@
 	</head>
 	
 	<body>
-		<h1>Let's see what <a href="https://www.w3schools.com/js/js_intro.asp">JavaScript</a> can do for us...</h1>
+		<h1>Let's see what <a href="https://www.w3schools.com/js/js_intro.asp">JavaScript</a> can do for us!</h1>
 		<h2>A beautiful site.</h2>
 		
 		<p id="demo">JavaScript can change HTML content.</p>
@@ -25,24 +25,20 @@
 		onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
 		
 		<br><br><hr><br>
-		
 		<!-- #2 change an image with the click of a button -->
 		<p> Here, JavaScript changes the src attribute of an img.</p>
 		
-		<button onclick="document.getElementById('myImage').src='images/pic_bulbon.gif'">
+		<button onclick="document.getElementById('myImage').src='../images/pic_bulbon.gif'">
 		Turn on the light</button>
 		
-		<img id="myImage" src="images/pic_bulboff.gif" style="width:100px">
+		<img id="myImage" src="../images/pic_bulboff.gif" style="width:100px">
 		
-		<button onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'">
+		<button onclick="document.getElementById('myImage').src='../images/pic_bulboff.gif'">
 		Turn off the light</button>
 		
 		<br><br><hr><br>
-		
 		<p id="demo2">I am but a humble demonstration of the power of JavaScript.</p>
-		
 		<!-- #3 JavaScript can change HTML styles (CSS) -->
-		<br>
 		<button onclick="document.getElementById('demo2').style.fontSize='24px';">Change HTML Style</button>
 		
 		<!-- #4 JavaScript can hide HTML elements -->
@@ -52,7 +48,6 @@
 		<button onclick="document.getElementById('demo2').style.display='block';">Show HTML Element</button>
 		
 		<br><br><hr><br>	
-
 		<!-- #6 The <script> tag -->
 		<p id='demo3'> I'll be overwritten soon.</p>
 		<script>
@@ -101,7 +96,8 @@
 		<br><br><hr><br>
 		
 		<!-- using document.write() after html fully loaded will del all existing HTML-->
-		<button type="button" onclick="document.write(5+6)">Destroy</button>	
+
+		<button type="button" onclick="document.write('BOOM')">Destroy</button>	
 
 		<br><br><hr><br>		
 		<!-- using window.alert() -->
@@ -119,7 +115,7 @@
 		
 		<!-- variables are a thing in JS too-->
 		Who invented golang?
-		<p id='demo7'>This guy is cool.</p>
+		<p id='demo7' style="u">This guy is cool.</p>
 		<script>
 			var developerName = "Ken Thompson", 
 				devLang = "golang";
